@@ -117,6 +117,17 @@ https://www.docker.com/blog/getting-started-with-docker-using-node-jspart-i/
   108  history
 
 ######## feb 24, 2024
+ vi heroku.yml
+  209  vi Dockerfile
+  210  vi app.js
+  211  heroku create alfredfifteen     --manifest
+  212  heroku git:remote -a alfredfifteen
+  213  git init
+  214  git add -A
+  215  git commit -m "five"
+  216  git push heroku HEAD:master
+  217  heroku logs --tail
+  218  history
 
 
 $ git init
