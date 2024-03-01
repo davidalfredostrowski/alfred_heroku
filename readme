@@ -8,6 +8,47 @@ https://stackoverflow.com/questions/15693192/heroku-node-js-error-web-process-fa
 
 
 
+
+
+
+ ls
+ sudo apt-get update
+ sudo apt-get install -y ca-certificates curl gnupg
+ sudo mkdir -p /etc/apt/keyrings
+ curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+ NODE_MAJOR=16
+ sudo apt-get update
+ sudo apt-get install nodejs -y
+ node -v
+ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+ sudo npm install -g heroku --force
+ heroku --version
+ heroku login -i
+ mkdir alfredo
+ cd alfredo/
+ vi Dockerfile
+ vi app.js
+ vi heroku.yml
+ vi package.json
+ cd ..
+ ls
+ npm install express --save
+ vi .dockerignore
+ cd alfredo
+ ls
+sudo docker build -t alfredo .
+sudo docker run -p 8080:8080 -tid alfredo
+heroku create alfredoone --manifest
+
+git init
+git add -A
+git commit -m "firstfirst"
+git branch -M main
+heroku git:remote -a alfredotwo
+git push heroku HEAD:master
+
+
+
  1  ls
     2  sudo apt-get update
     3  sudo apt-get install -y ca-certificates curl gnupg
