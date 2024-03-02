@@ -41,7 +41,7 @@ git init
 git add -A
 git commit -m "firstfirst"
 git branch -M main
-heroku git:remote -a alfredotwo
+heroku git:remote -a alfredoone
 git push heroku HEAD:master
 
 
