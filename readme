@@ -23,6 +23,7 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
  sudo apt-get install nodejs -y
  node -v
 sudo snap install docker
+npm install express --save
  curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
  sudo npm install -g heroku --force
  heroku --version
